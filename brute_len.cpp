@@ -14,6 +14,7 @@ int main(int argc, char** argv) {
       string sub = str.substr(i, 3);
       if(sub == "KHL") {
         printf("%d\n", i % len);
+        printf("%d %d %d\n", ('K' - 'T' + 26) % 26, 0, ('L' - 'E' + 26) % 26);
       }
       mp[sub]++;
     }
@@ -21,5 +22,6 @@ int main(int argc, char** argv) {
   for(auto it : mp) {
     //if(it.second > 5) printf("%s %d\n", it.first.c_str(), it.second);
   }
+  printf("%c%c%c\n", 17 + 'A', 'A', 7 + 'A');
   return 0;
 }
